@@ -7,12 +7,14 @@ import ResetPassword from "./components/ResetPassword";
 import Dashboard from "./components/Dashboard";
 
 import "./App.css";
+import Index from "./components/Index";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/home" element={<Home />} />
