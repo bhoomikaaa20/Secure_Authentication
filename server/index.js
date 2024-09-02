@@ -16,7 +16,9 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "https://remarkable-belekoy-83a35c.netlify.app", // Remove trailing slash
+    origin: "https://remarkable-belekoy-83a35c.netlify.app", // Ensure this URL is correct
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allow all necessary methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Allow necessary headers
     credentials: true,
   })
 );
